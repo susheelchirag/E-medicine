@@ -1,0 +1,61 @@
+<html>
+<head><title>E-Medicine</title>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type="text/javascript">
+<!--
+var image1=new Image()
+image1.src="edoc2.jpg"
+var image2=new Image()
+image2.src="edoc3.jpg"
+var image3=new Image()
+image3.src="edoc4.jpg"
+var image4=new Image()
+image4.src="edoc.jpg"
+var image5=new Image()
+image5.src="doc.jpg"
+//-->
+</script>
+
+
+</head>
+<body>
+<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\download.jpg" id="im"/>
+
+
+<br />
+<hr  />
+<div class="menu_div">
+        <ul>
+        <li><a href="emed.html">Home<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\home.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="childtips.html">Tips for children<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\tips.jpg" width="60" height=" 60" align="left"/></a></li>  
+        <li><a href="information.html">Information<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\inf.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="reg.html">Register<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\register.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="login.html">Login<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\login.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="feedback.html">Feedback<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\fb.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="contact.html">Contact Us<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\ph.jpg" width="60" height=" 60" align="left"/></a></li>
+        </ul>
+</div>
+<img src="edoc2.jpg" name="slide" id="dp" width="40%" height="50%"/>
+<script>
+<!--
+//variable that will increment through the images
+var step=1
+function slideit(){
+//if browser does not support the image object, exit.
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<5)
+step++
+else
+step=1
+//call function "slideit()" every 2.5 seconds
+setTimeout("slideit()",2500)
+}
+slideit()
+//-->
+</script>
+
+    	
+</body>
+</html>

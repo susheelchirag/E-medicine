@@ -1,0 +1,76 @@
+<html>
+<head><title>E-Medicine</title>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type="text/javascript"> 
+function hgcheck(thisform) 
+{ 
+with (thisform) 
+ { 
+ if (hgrequired(email,"Visitor E-Mail required!")==false){ 
+   email.focus(); 
+   return false; 
+   } 
+ if (hgrequired(tellme,"E-Mail Content required!")==false){ 
+   email.focus(); 
+   return false; 
+   } 
+ } 
+} 
+function hgrequired(newfield,newmessage) 
+{ 
+with (newfield) 
+ { 
+ if (value) 
+   return true; 
+ else 
+   { 
+   alert(newmessage); 
+   return false; 
+   } 
+ } 
+} 
+</script> 
+</head>
+<body>
+<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\download.jpg" id="im"/>
+        </ul>
+</div>
+
+<br />
+<hr  />
+<?php include 'menu.php'; ?>
+<div class="menu_div">
+        <ul>
+        <li><a href="emed.html">Home<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\home.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="childtips.html">Tips for children<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\tips.jpg" width="60" height=" 60" align="left"/></a></li>  
+        <li><a href="information.html">Information<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\inf.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="reg.html">Register<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\register.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="login.html">Login<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\login.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="feedback.html">Feedback<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\fb.jpg" width="60" height=" 60" align="left"/></a></li>
+        <li><a href="contact.html">Contact Us<img src="C:\Users\SUSHEEL CHIRAG\Downloads\internetforenterpriseproject\ph.jpg" width="60" height=" 60" align="left"/></a></li>
+        </ul>
+</div>
+<p  id="dp" style="font-family:Segoe Print;color:green;font-size:30px;"> Feedback Form</p>
+<form action="formsuc.html" method="post" onsubmit="return hgcheck(this)"  id="fb"> 
+    <table id="form" cellspacing="0" cellpadding="0">
+        <tr>
+		<td><input type="hidden" name="recipient" value="youremail@here.com"> 
+			<input type="hidden" name="subject" value="FormMail E-Mail"> 
+			Your opinion about the site.<br /><br /> 
+		</td>
+		</tr>
+        <tr><td>
+        E-Mail: </td><td><input type="text" name="email" size="20" value=""></td></tr><br /> 
+
+        <tr><td>Comment:</td><td> <textarea cols="30" name="comment" rows="9" size="20" value=""></textarea></td></tr>
+        <tr><td>
+            <br /><br /> <input type="submit" name="submit" value="Submit"></td></tr>
+        
+<input type="hidden" name="redirect" value="http://www.mydomain.com/path"> 
+</table>
+</form> 
+
+
+
+</body>
+</html>
